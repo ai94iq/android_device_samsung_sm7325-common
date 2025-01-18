@@ -106,7 +106,6 @@ bluetooth.profile.vcp.controller.enabled=false
 
 # Camera
 camera.disable_zsl_mode=1
-ro.camera.notify_nfc=1
 
 # Chipset
 ro.soc.manufacturer=QTI
@@ -194,13 +193,14 @@ vendor.powerhal.disp.idle_support=false
 
 # RIL
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
-persist.vendor.radio.atfwd.start=true
+persist.vendor.radio.atfwd.start=false
 ro.vendor.use_data_netmgrd=false
 ro.vendor.sec.radio.def_network=9
 persist.vendor.radio.enableadvancedscan=true
 ro.telephony.default_cdma_sub=0
-ro.telephony.default_network=26,26
-ro.radio.noril=no
+ro.telephony.default_network=33,33
+ro.radio.noril=yes
+# TODO decommonize https://github.com/LineageOS/android_device_xiaomi_sm8250-common/commit/4f2f48009cb93017204dfe6ce34a32f9ad202d10#diff-a9b707be450acdc01d52515e6b84fb8eed8a8cfb468e684a7128271ae6d5c22bR487
 
 # USB
 vendor.usb.diag.func.name=ffs
@@ -212,10 +212,6 @@ vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
 vendor.usb.use_gadget_hal=0
-
-# Vibrator
-ro.vendor.vibrator_hal.click_duration=80
-ro.vendor.vibrator_hal.tick_duration=40
 
 # Wifi
 wifi.aware.interface=wifi-aware0
