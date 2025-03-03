@@ -195,12 +195,10 @@ vendor.powerhal.disp.idle_support=false
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 persist.vendor.radio.atfwd.start=false
 ro.vendor.use_data_netmgrd=false
-ro.vendor.sec.radio.def_network=9
 persist.vendor.radio.enableadvancedscan=true
 ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=33,33
-ro.radio.noril=yes
-# TODO decommonize https://github.com/LineageOS/android_device_xiaomi_sm8250-common/commit/4f2f48009cb93017204dfe6ce34a32f9ad202d10#diff-a9b707be450acdc01d52515e6b84fb8eed8a8cfb468e684a7128271ae6d5c22bR487
+ro.radio.noril?=yes
 
 # USB
 vendor.usb.diag.func.name=ffs

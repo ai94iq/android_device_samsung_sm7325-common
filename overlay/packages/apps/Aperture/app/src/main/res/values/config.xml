@@ -27,8 +27,8 @@
              </string-array>
     -->
     <string-array name="config_additionalVideoConfigurations">
-        <item>0</item> <item>sd|hd|fhd</item> <item>60</item>
-        <item>1</item> <item>sd|hd|fhd</item> <item>60</item>
-        <item>3</item> <item>sd|hd|fhd</item> <item>60</item>
+        <item>0</item> <item>hd|fhd</item> <item>30</item> <!-- Rear camera 1 -->
+        <item>1</item> <item>hd|fhd</item> <item>30</item> <!-- Front camera 1 -->
+        <!-- <item>2</item> <item>hd|fhd</item> <item>30</item>--> <!-- Front camera 2 -->
     </string-array>
 </resources>
