@@ -230,10 +230,7 @@ BOARD_USES_FULL_RECOVERY_IMAGE := true
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/root/fstab.qcom
 
 # Releasetools
-# TODO verify script works with Tablet number
-ifneq ($(TARGET_IS_TABLET),true)
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_samsung_sm7325
-endif
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # SePolicy
