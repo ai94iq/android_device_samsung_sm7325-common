@@ -60,6 +60,7 @@ PRODUCT_PACKAGES += \
     init.vendor.onebinary.rc \
     vendor.samsung.rilchip.qcom.rc \
     init.vendor.rilcommon.rc \
+
 endif
 
 # Vendor scripts
